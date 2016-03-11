@@ -5983,7 +5983,7 @@ void loop() {
 }
 ```
 
-- When the device starts up, it automatically tries to connect to Wi-Fi and the Particle Cloud.
+- When the device starts up, it automatically tries to connect to the cellular network and the Particle Cloud.
 - Once a connection with the Particle Cloud has been established, the user code starts running.
 - Messages to and from the Cloud are handled in between runs of the user loop; the user loop automatically alternates with [`Particle.process()`](#particle-process-).
 - `Particle.process()` is also called during any delay() of at least 1 second.
